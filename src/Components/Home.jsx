@@ -13,7 +13,8 @@ import {
   Col,
   Row
 } from "reactstrap";
-import ShareComponent from './Share';
+import ShareComponent from "./Share";
+import LikeFB from "./LikeFB";
 const API = "http://localhost:3001/restaurants";
 
 const Home = () => {
@@ -44,7 +45,6 @@ const Home = () => {
 
   return (
     <Container>
-     
       <br></br>
 
       <select className="form-control" onChange={handleChange}>
@@ -56,7 +56,7 @@ const Home = () => {
 
       <Row>
         {restaurants.map(item => (
-          <Col key={item.id} md={3}>
+          <Col key={item.id} md={4}>
             <Card>
               <CardHeader> {item.name}</CardHeader>
 
@@ -91,10 +91,14 @@ const Home = () => {
                 </a>
               </CardBody>
               <CardFooter className="text-muted">
+                <LikeFB url={item.contact.site} />
 
-                <ShareComponent url={item.contact.site} text={item.name} address={`${item.address.street} ${item.address.city} ${item.address.state}`}/>
+                <ShareComponent
+                  url={item.contact.site}
+                  text={item.name}
+                  address={`${item.address.street} ${item.address.city} ${item.address.state}`}
+                />
               </CardFooter>
-
             </Card>
           </Col>
         ))}

@@ -42,17 +42,15 @@ const Home = () => {
 
   return (
     <Container>
-      <input
-        className="form-control"
-        id="myInput"
-        type="select"
-        placeholder="Selecciona como lo quieres ordenar.."
-      />
+     
+      <br></br>
+
       <select className="form-control" onChange={handleChange}>
         <option value="">Ordenar por :</option>
         <option value="rating">Ordenar por rating</option>
         <option value="nombre">Ordenar por Nombre</option>
       </select>
+      <br></br>
 
       <Row>
         {restaurants.map(item => (

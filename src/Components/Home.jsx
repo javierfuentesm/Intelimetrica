@@ -9,9 +9,11 @@ import {
   CardSubtitle,
   CardBody,
   Container,
+  CardFooter,
   Col,
   Row
 } from "reactstrap";
+import ShareComponent from './Share';
 const API = "http://localhost:3001/restaurants";
 
 const Home = () => {
@@ -88,6 +90,11 @@ const Home = () => {
                   Sitio Web
                 </a>
               </CardBody>
+              <CardFooter className="text-muted">
+
+                <ShareComponent url={item.contact.site} text={item.name} address={`${item.address.street} ${item.address.city} ${item.address.state}`}/>
+              </CardFooter>
+
             </Card>
           </Col>
         ))}

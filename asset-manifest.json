@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Intelimetrica/static/css/main.34de6062.chunk.css",
+    "main.js": "/Intelimetrica/static/js/main.6b044ec2.chunk.js",
+    "main.js.map": "/Intelimetrica/static/js/main.6b044ec2.chunk.js.map",
+    "runtime-main.js": "/Intelimetrica/static/js/runtime-main.8a023177.js",
+    "runtime-main.js.map": "/Intelimetrica/static/js/runtime-main.8a023177.js.map",
+    "static/css/2.b0bb7f2c.chunk.css": "/Intelimetrica/static/css/2.b0bb7f2c.chunk.css",
+    "static/js/2.49485f6e.chunk.js": "/Intelimetrica/static/js/2.49485f6e.chunk.js",
+    "static/js/2.49485f6e.chunk.js.map": "/Intelimetrica/static/js/2.49485f6e.chunk.js.map",
+    "index.html": "/Intelimetrica/index.html",
+    "precache-manifest.d6cbf5a004d4ba20facc49d126a1e14e.js": "/Intelimetrica/precache-manifest.d6cbf5a004d4ba20facc49d126a1e14e.js",
+    "service-worker.js": "/Intelimetrica/service-worker.js",
+    "static/css/2.b0bb7f2c.chunk.css.map": "/Intelimetrica/static/css/2.b0bb7f2c.chunk.css.map",
+    "static/css/main.34de6062.chunk.css.map": "/Intelimetrica/static/css/main.34de6062.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8a023177.js",
+    "static/css/2.b0bb7f2c.chunk.css",
+    "static/js/2.49485f6e.chunk.js",
+    "static/css/main.34de6062.chunk.css",
+    "static/js/main.6b044ec2.chunk.js"
+  ]
+}

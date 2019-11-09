@@ -1,5 +1,10 @@
 import React, { Component } from "react";
-import { Map, GoogleApiWrapper, Marker, InfoWindow } from "google-maps-react";
+import {
+  Map,
+  GoogleApiWrapper,
+  Marker,
+  InfoWindow
+} from "google-maps-react";
 
 class MapContainer extends Component {
   constructor(props) {
@@ -24,13 +29,12 @@ class MapContainer extends Component {
     const { markers } = this.state;
     const lat = event.latLng.lat();
     const lng = event.latLng.lng();
-    
-    this.props.locationChanged({lat, lng});
-    
+
+    this.props.locationChanged({ lat, lng });
+
     this.setState({
       marker: { lat, lng }
     });
-
   };
 
   render() {
@@ -41,6 +45,10 @@ class MapContainer extends Component {
           zoom={15}
           onClick={this.onMapClicked}
           initialCenter={{ lat: 19.440057053713137, lng: -99.12704709742486 }}
+          style={{
+            width: "70%",
+            height: "100%"
+          }}
         >
           <Marker
             onClick={this.onMarkerClick}

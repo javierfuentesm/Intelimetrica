@@ -64,7 +64,7 @@ const Home = () => {
                 top
                 width="100%"
                 src="https://picsum.photos/740/420/?random"
-                alt="Card image cap"
+                alt={item.name}
               />
               <CardBody>
                 <CardTitle>

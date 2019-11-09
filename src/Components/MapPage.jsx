@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { baseUrl } from "../utils/baseUrl";
-import { Container, Col } from "reactstrap";
+import { Container, Col, Row } from "reactstrap";
 import MapContainer from "./MapContainer";
 
 const MapPage = () => {
@@ -75,9 +75,7 @@ const MapPage = () => {
       readyRestaurants
         .map(restaurant => restaurant.rating)
         .reduce((sum, value) => sum + value, 0) / readyRestaurants.length;
-    debugger;
     setAverage(mean);
-    // Calc standard deviation
     const variance =
       readyRestaurants
         .map(restaurant => Math.pow(restaurant.rating - mean, 2))
@@ -122,12 +120,12 @@ const MapPage = () => {
             {readyRestaurants.length}
           </div>
           <div>
-            Promedio de rating de restaurantes en el rango seleccionado
+            Promedio de rating de restaurantes en el rango seleccionado{" "}
             {average}
           </div>
 
           <div>
-            Desviación Estándar
+            Desviación Estándar{" "}
             {deviation}
           </div>
         </div>
@@ -135,10 +133,13 @@ const MapPage = () => {
         "Aún no has hecho ninguna búsqueda"
       )}
       <br />
-      <MapContainer
-        data={readyRestaurants}
-        locationChanged={onLocationChangedHandler}
-      />
+      <Row>
+
+          <MapContainer
+            data={readyRestaurants}
+            locationChanged={onLocationChangedHandler}
+          />
+      </Row>
     </Container>
   );
 };

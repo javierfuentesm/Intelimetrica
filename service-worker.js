@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Intelimetrica/precache-manifest.d6cbf5a004d4ba20facc49d126a1e14e.js"
+  "/Intelimetrica/precache-manifest.fe6fb9d9ebb4fb6b678b5f30e6c1c1b5.js"
 );
 
 self.addEventListener('message', (event) => {

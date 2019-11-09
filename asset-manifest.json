@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Intelimetrica/static/css/main.34de6062.chunk.css",
-    "main.js": "/Intelimetrica/static/js/main.6b044ec2.chunk.js",
-    "main.js.map": "/Intelimetrica/static/js/main.6b044ec2.chunk.js.map",
+    "main.js": "/Intelimetrica/static/js/main.0cb10395.chunk.js",
+    "main.js.map": "/Intelimetrica/static/js/main.0cb10395.chunk.js.map",
     "runtime-main.js": "/Intelimetrica/static/js/runtime-main.8a023177.js",
     "runtime-main.js.map": "/Intelimetrica/static/js/runtime-main.8a023177.js.map",
     "static/css/2.b0bb7f2c.chunk.css": "/Intelimetrica/static/css/2.b0bb7f2c.chunk.css",
     "static/js/2.49485f6e.chunk.js": "/Intelimetrica/static/js/2.49485f6e.chunk.js",
     "static/js/2.49485f6e.chunk.js.map": "/Intelimetrica/static/js/2.49485f6e.chunk.js.map",
     "index.html": "/Intelimetrica/index.html",
-    "precache-manifest.d6cbf5a004d4ba20facc49d126a1e14e.js": "/Intelimetrica/precache-manifest.d6cbf5a004d4ba20facc49d126a1e14e.js",
+    "precache-manifest.fe6fb9d9ebb4fb6b678b5f30e6c1c1b5.js": "/Intelimetrica/precache-manifest.fe6fb9d9ebb4fb6b678b5f30e6c1c1b5.js",
     "service-worker.js": "/Intelimetrica/service-worker.js",
     "static/css/2.b0bb7f2c.chunk.css.map": "/Intelimetrica/static/css/2.b0bb7f2c.chunk.css.map",
     "static/css/main.34de6062.chunk.css.map": "/Intelimetrica/static/css/main.34de6062.chunk.css.map"
@@ -19,6 +19,6 @@
     "static/css/2.b0bb7f2c.chunk.css",
     "static/js/2.49485f6e.chunk.js",
     "static/css/main.34de6062.chunk.css",
-    "static/js/main.6b044ec2.chunk.js"
+    "static/js/main.0cb10395.chunk.js"
   ]
 }

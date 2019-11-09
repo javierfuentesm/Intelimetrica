@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f639ebaaac04395debb1450eecbbc434",
+    "revision": "4cf1c131b81d3c75502b27fff2d67dfd",
     "url": "/Intelimetrica/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Intelimetrica/static/css/2.b0bb7f2c.chunk.css"
   },
   {
-    "revision": "07b12f4243dbac65631a",
+    "revision": "34892e8f0fccd6bfc312",
     "url": "/Intelimetrica/static/css/main.34de6062.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Intelimetrica/static/js/2.49485f6e.chunk.js"
   },
   {
-    "revision": "07b12f4243dbac65631a",
-    "url": "/Intelimetrica/static/js/main.6b044ec2.chunk.js"
+    "revision": "34892e8f0fccd6bfc312",
+    "url": "/Intelimetrica/static/js/main.0cb10395.chunk.js"
   },
   {
     "revision": "967d4ca4ef9105acaccb",

@@ -1,37 +1,43 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem
+} from "reactstrap";
+import { NavLink } from "react-router-dom";
 
-const Header = () => (
-  <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a className="navbar-brand" href="#">
-      Restaurantes
-    </a>
-    <button
-      className="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span className="navbar-toggler-icon"></span>
-    </button>
+const Example = props => {
+  const [collapsed, setCollapsed] = useState(true);
 
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul className="navbar-nav mr-auto">
-        <li className="nav-item active">
-          <a className="nav-link">
-            <Link to="/">Inicio</Link>
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link">
-            <Link to="/map">Mapa</Link>
-          </a>
-        </li>
-      </ul>
+  const toggleNavbar = () => setCollapsed(!collapsed);
+
+  return (
+    <div>
+      <Navbar color="dark"  variant="dark" expand="lg">
+        <NavbarBrand href="/"  className="mr-auto">
+          Restaurantes
+        </NavbarBrand>
+        <NavbarToggler onClick={toggleNavbar} className="mr-2" />
+        <Collapse isOpen={!collapsed} navbar>
+          <Nav navbar>
+            <NavItem >
+              <NavLink className="nav-link" to="/">
+                <span className="fa fa-home fa-lg" /> Inicio
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink className="nav-link" to="/map">
+                <span className="fa fa-home fa-lg" /> Mapas
+              </NavLink>
+            </NavItem>
+          </Nav>
+        </Collapse>
+      </Navbar>
     </div>
-  </nav>
-);
-export default Header;
+  );
+};
+
+export default Example;

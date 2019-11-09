@@ -15,18 +15,18 @@ import {
 } from "reactstrap";
 import ShareComponent from "./Share";
 import LikeFB from "./LikeFB";
-const API = "http://localhost:3001/restaurants";
+import { baseUrl } from "../utils/baseUrl";
 
 const Home = () => {
   const [restaurants, setRestaurant] = useState([]);
 
   useEffect(() => {
     const fetchdata = async () => {
-      const response = await fetch(API);
+      const response = await fetch(baseUrl);
       const data = await response.json();
       setRestaurant(data);
     };
-    fetchdata(API);
+    fetchdata();
   }, []);
 
   const handleChange = e => {

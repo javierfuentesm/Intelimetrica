@@ -5,10 +5,12 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "emotion": "^10.0.23",
+    "google-maps-react": "^2.0.2",
     "react": "^16.11.0",
     "react-custom-share": "^0.4.8",
     "react-dom": "^16.11.0",
     "react-icons": "^3.8.0",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
     "reactstrap": "^8.1.1"
   },

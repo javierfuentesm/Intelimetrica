@@ -1,14 +1,22 @@
 import React from "react";
-import "./App.css";
 import Home from "./Components/Home";
 import Header from "./Components/Header";
+import MapPage from './Components/MapPage';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const App = () => {
   return (
-    <div className="App">
+    <Router>
       <Header />
-      <Home />
-    </div>
+      <Switch>
+        <Route path="/" exact>
+          <Home />
+        </Route>
+        <Route  path="/map" exact>
+          <MapPage />
+        </Route>
+      </Switch>
+    </Router>
   );
 };
 

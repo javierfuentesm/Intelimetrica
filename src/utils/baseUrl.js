@@ -1,1 +1,1 @@
-export const baseUrl ="https://recruiting-datasets.s3.us-east-2.amazonaws.com/data_melp.json";
+export const baseUrl ="https://json-server-now.javierfuentesm.now.sh/restaurants";

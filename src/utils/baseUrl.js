@@ -1,1 +1,1 @@
-export const baseUrl ="http://localhost:3001/restaurants";
+export const baseUrl ="https://recruiting-datasets.s3.us-east-2.amazonaws.com/data_melp.json";
